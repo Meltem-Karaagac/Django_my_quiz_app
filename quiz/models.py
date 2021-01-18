@@ -16,7 +16,7 @@ class Quizzes(models.Model):
         verbose_name_plural = _("Quizzes")
         ordering = ['id']
 
-    title = models.CharField(max_length=255, default=_(
+    title = models.CharField(max_length=250, default=_(
         "New Quiz"), verbose_name=_("Quiz Title"))
     category = models.ForeignKey(
         Category, default=1, on_delete=models.DO_NOTHING)
